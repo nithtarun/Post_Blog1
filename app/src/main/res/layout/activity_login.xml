@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorPrimaryDark"
+    tools:context="com.example.post_blog.LoginActivity">
+
+  <ImageView
+      android:id="@+id/login_page_logo"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="64dp"
+      android:layout_marginEnd="8dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/login_progress"
+      app:srcCompat="@drawable/index" />
+
+  <EditText
+      android:id="@+id/login_email"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="64dp"
+      android:layout_marginEnd="8dp"
+      android:backgroundTint="@android:color/white"
+      android:ems="10"
+      android:hint="Email..."
+      android:inputType="textEmailAddress"
+      android:padding="16dp"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/login_page_logo" />
+
+  <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:id="@+id/login_password" android:layout_marginStart="8dp" android:layout_marginTop="64dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/login_email" android:backgroundTint="@android:color/white" android:ems="10" android:hint="Password" android:inputType="textPassword" android:padding="16dp" android:textColor="@android:color/white" android:textSize="18sp" app:layout_constraintHorizontal_bias="0.0"/>
+
+  <Button android:layout_width="0dp" android:layout_height="wrap_content" android:background="@color/colorAccent" android:id="@+id/login_button" android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" android:padding="20dp" android:textColor="@android:color/white" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/login_password" android:textAllCaps="false" android:text="Login"/>
+
+  <Button android:layout_width="0dp" android:layout_height="wrap_content" android:background="@android:color/white" android:id="@+id/new_reg_button" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" android:padding="20dp" android:textColor="@color/colorAccent" android:textAllCaps="false" android:text="Need a new Account" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+
+  <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/login_progress" android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" android:visibility="invisible" android:indeterminate="true" android:layout_margin="0dp" style="?android:attr/progressBarStyle"/>
+
+</android.support.constraint.ConstraintLayout>
